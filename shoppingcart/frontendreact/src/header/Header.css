@@ -1,0 +1,147 @@
+.header {
+  background: blue;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header_logo {
+  width: 100px;
+  object-fit: contain;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 18px;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+}
+
+.header__searchInput {
+  height: 12px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline-color: #cd9042;
+}
+
+.header__searchIcon {
+  background-color: #cd9042;
+  padding: 7px;
+  border-radius: 5px;
+  margin-left: -37px;
+  height: 22px !important;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__optionLineOne {
+  font-size: 12px;
+}
+
+.header__optionLineTwo {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* To make Responsive */
+.header__first {
+  display: flex;
+  align-items: center;
+  
+}
+.checkbtn {
+  font-size: 20px;
+  color: white;
+  margin-left: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.check {
+  display: none;
+}
+
+.header__second__right {
+  display: none;
+}
+
+
+@media (max-width: 700px ) {
+
+  .header {
+    flex-direction: column;
+    position: static;
+    /* top: 0; */
+  }
+
+  .header__first_main_res {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* .header__first {
+     display: flex;
+    width: 100%; 
+  } */
+
+  .checkbtn {
+    display: block;
+  }
+
+  .header_logo {
+    width: 70px;
+    margin-left: 15px;
+  }
+
+  .header__search {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__second__right {
+    align-items: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+  }
+
+  
+
+}
